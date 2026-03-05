@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Anurag AI TV</title>
+
+<style>
+body{
+    background:black;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+    padding-top:120px;
+}
+
+#msg{
+    font-size:70px;
+}
+
+#clock{
+    font-size:40px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Anurag AI TV</h1>
+
+<div id="msg">
+Welcome Home ❤️
+</div>
+
+<div id="clock"></div>
+
+<script>
+
+function updateClock(){
+    let now = new Date()
+    document.getElementById("clock").innerHTML =
+    now.toLocaleTimeString()
+}
+
+setInterval(updateClock,1000)
+
+</script>
+
+</body>
+</html>
